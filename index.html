@@ -1,156 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hashini Sathsarani | Portfolio</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
 
-         <link rel="stylesheet" href="style.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!--NAVIGATION-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
-        <div class="container">
-            
-            <img src="img/logohs.png" alt="logo">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+  <div class="container">
+    <img src="img/logohs.png" alt="logo" height="40">
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="project.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-     <section id="profile">
-        <div id="profile">
-            <div class="section__pic-container">
-        <img src="img/dp.png" alt="Hashini's profile picture" width="350px" height="450px"/>
-      </div>
-      <div class="section__text">
-        <h5><b>Hello, I'm</b></h5>
-        <h1 class="title">Hashini Sathsarani</h1>
-        <p class="section__text__p2">Web Developer</p>
-        <h4>BSc Information Technology</h4>
-        <p>Open University of Sri Lanaka<br>
-        Faculty of Natural Sceince,<br>Department of Compter Science</p>
-        <div class="btn-container">
-          <button class="btn btn-color-1" onclick="location.href='./#contact'"> Download CV </button>
-          <button class="btn btn-color-1" onclick="location.href='contact.html'"> Contact </button>
-        </div>
-        <div id="socials-container">
-          <img src="img/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'"/>
-          <img src="img/github-sign.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/sathsarani2016'"/>
-        </div>
-      </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
-</section>
+  </div>
+</nav>
 
-<!-- ------------------------------ About---------------------------------------------->
+<!-- ================= HERO SECTION ================= -->
+<section id="profile" class="pt-5 mt-5">
+  <div class="container">
+    <div class="row align-items-center">
 
-<section id="index-about">
-    <div id="index-about">
-        <div class="container">
-            <div class="row">
-                <div class="index-about-1">
-                    <img src="img/lap.jpg">
-                </div>
-                <div class="index-about-2">
-                    <h2>About Me</h2>
-                    <p>I’m Hashini Sathsarani, an IT undergraduate with a passion for building software and web applications. 
-                        I love developing creative, efficient, and user-focused solutions while keeping up with the latest technologies. 
-                        I’m looking for opportunities as a Software Development / Web Development Intern to apply my knowledge, 
-                        contribute to impactful projects, and advance my skills.</p>
-                        <button class="btn btn-color-1" onclick="location.href='about.html'"> More </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-</section>
+      <div class="col-md-5 text-center">
+        <img src="img/dp.png" class="img-fluid rounded" alt="Profile Picture">
+      </div>
 
+      <div class="col-md-7">
+        <h5>Hello, I'm</h5>
+        <h1><b>Hashini Sathsarani</b></h1>
+        <h4 class="text-primary">undergraduate</h4>
 
-<!-- ---------------------------- projects------------------------------------------->
+        <p class="mt-3">
+          BSc in Information Technology undergraduate at the Open University of Sri Lanka,
+          passionate about building full-stack web applications and user-friendly solutions.
+        </p>
 
-<section id="featured" class="my-5 py-5">
-    
-        <div class="container mt-5 py-5">
-            <h2 class="font-weight-bold">Projects</h2>
-        </div>
+        <a href="Hashini_Sathsarani_CV.pdf" download class="btn btn-primary mr-2">Download CV</a>
+        <a href="contact.html" class="btn btn-outline-primary">Contact Me</a>
 
-        <!-- ---------------- Project 01 --------------- -->
-
-        <div class="row mx-auto container">
-            <div onclick="window.location;" class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/website.png" alt="project pic" width="100px" height="100px">
-                <div class="star">
-                </div>
-                <h5 class="p-name"><b>Programming Projects</b></h5>
-            </div>
-            
-            <!-- ---------------- Project 02 --------------- -->
-            
-            <div onclick="window.location;"  class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/website.png" alt="project pic" width="100px" height="100px">
-                <div class="star">
-                </div>
-                <h5 class="p-name"><b>Web Development Projects</b></h5>
-            </div>
-
-            <!-- ---------------- Project 03 --------------- -->
-
-            <div onclick="window.location;"  class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/website.png" alt="project pic" width="100px" height="100px">
-                <div class="star">
-                </div>
-                <h5 class="p-name"><b>UI/UX Designs</b></h5>
-            </div>
-
-            <!-- ---------------- Project 04 --------------- -->
-
-             <div onclick="window.location;"  class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/website.png" alt="project pic" width="100px" height="100px">
-                <div class="star">
-                </div>
-                <h5 class="p-name"><b>Graphic Design</b></h5>
-            </div>
-            <button class="btn btn-color-4" onclick="location.href='project.html'"> More </button>
-        </section>
-
-        
-    <section id="contact">
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="img/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
-          <p><a href="sathsaranihashini071@gmail.com">sathsaranihashini071@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img src="img/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
-          <p><a href="http://www.linkedin.com/in/hashini-sathsarani-496a6a2ab">LinkedIn</a></p>
+        <div class="mt-3">
+          <a href="https://github.com/hashini2016" target="_blank">
+            <img src="img/github-sign.png" width="35">
+          </a>
+          <a href="https://www.linkedin.com/in/hashini-sathsarani-496a6a2ab" target="_blank">
+            <img src="img/linkedin.png" width="35">
+          </a>
         </div>
       </div>
-    </section>
-    
-    <footer>
-        <p>My Portfolio &#169; 2025 Hashini Sathsarani. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT PREVIEW ================= -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <img src="img/lap.jpg" class="img-fluid rounded">
+      </div>
+
+      <div class="col-md-6">
+        <h2>About Me</h2>
+        <p>
+          I am an IT undergraduate with strong interest in software development,
+          web technologies, and UI/UX design. I enjoy learning new tools and building
+          real-world applications.
+        </p>
+        <a href="about.html" class="btn btn-primary">Read More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Technical Skills</h2>
+
+    <div class="row text-center">
+      <div class="col-md-3"><b>Frontend</b><br>HTML, CSS, JS, React</div>
+      <div class="col-md-3"><b>Backend</b><br>Node.js, Express, PHP</div>
+      <div class="col-md-3"><b>Database</b><br>MongoDB, MySQL</div>
+      <div class="col-md-3"><b>Tools</b><br>Git, GitHub, Figma</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED PROJECTS ================= -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Featured Projects</h2>
+
+    <div class="row">
+
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card shadow-sm">
+          <div class="icon-wrapper">
+            <img src="img/website.png" class="project-icon" alt="TaskNest">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">TaskNest</h5>
+            <p class="card-text">
+              Full-stack task management system using React, Node.js, and MongoDB.
+            </p>
+            <a href="project.html" class="btn btn-sm btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card shadow-sm">
+          <div class="icon-wrapper">
+            <img src="img/website.png" class="project-icon" alt="Travel Website">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Travel Agency Website</h5>
+            <p class="card-text">
+              Tourism website promoting Sri Lankan travel packages and services.
+            </p>
+            <a href="project.html" class="btn btn-sm btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card shadow-sm">
+          <div class="icon-wrapper">
+            <img src="img/website.png" class="project-icon" alt="UI UX">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">UI / UX Designs</h5>
+            <p class="card-text">
+              Modern UI designs created using Figma with user-focused layouts.
+            </p>
+            <a href="project.html" class="btn btn-sm btn-primary">View Designs</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sathsaranihashini071@gmail.com">sathsaranihashini071@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/hashini-sathsarani-496a6a2ab">View Profile</a></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Software Engineering Intern | Web Developer Intern</p>
+  <div class="social-icons">
+    <a href="https://github.com/hashini2016" target="_blank">
+      <img src="img/github-sign.png" alt="GitHub" class="social-icon">
+    </a>
+    <a href="https://www.linkedin.com/in/hashini-sathsarani-496a6a2ab" target="_blank">
+      <img src="img/linkedin.png" alt="LinkedIn" class="social-icon">
+    </a>
+  </div>
+  <p>© 2025 Hashini Sathsarani. All Rights Reserved.</p>
+</footer>
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
