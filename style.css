@@ -421,5 +421,153 @@ font-family: Arial, sans-serif;
   font-size: 13px;
 }
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f8fb;
+}
+
+/* HERO */
+.projects-hero {
+  padding: 110px 0 60px;
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.projects-hero h2 {
+  font-weight: 700;
+}
+
+.projects-hero p {
+  color: #666;
+}
+
+/* PROJECT ITEM */
+.project-item {
+  display: flex;
+  gap: 16px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  border-left: 4px solid #007bff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+}
+
+/* SMALL ICON */
+.project-icon-sm {
+  width: 32px;
+  height: 32px;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+.project-content h6 {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.project-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.project-content span {
+  font-size: 13px;
+  color: #777;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* BUTTON */
+.btn-blue-outline {
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 20px;
+  padding: 4px 14px;
+}
+
+.btn-blue-outline:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* FOOTER */
+.footer {
+  background: #111111;
+  padding: 15px;
+  font-size: 14px;
+  border-top: 1px solid #eaeaea;
+}
+
+/* CONTACT HERO */
+.contact-hero {
+  padding: 120px 20px 50px;
+  background: #f8f9fc;
+}
+
+.contact-hero h2 {
+  font-weight: 700;
+}
+
+.contact-hero p {
+  color: #666;
+}
+
+/* CONTACT BOX */
+.contact-box {
+  background: #fff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+}
+
+/* INFO */
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  max-width: 200px;
+}
+
+.info-item i {
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.info-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* FORM */
+.form-control {
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.btn-blue {
+  background: #007bff;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.btn-blue:hover {
+  background: #0056b3;
+  color: #fff;
+}
+
+
 
 

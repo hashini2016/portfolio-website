@@ -1,100 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Projects | Hashini Sathsarani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <!--NAVIGATION-->
-     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
-        <div class="container">
-            <img src="img/logohs.png" alt="logo">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="project.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section id="featured" class="my-5 py-5">
-        <div class="container mt-5 py-5">
-            <h2 class="font-weight-bold">Projects</h2>
-        </div>
-
-        <!-- ---------------- Project 01 --------------- -->
-
-        <div class="row mx-auto container">
-            <div onclick="window.location.href='projectD.html';" class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/website.png" alt="project pic" width="100px" height="100px">
-                <div class="star">
-                </div>
-                <h5 class="p-name"><b>Programming Projects</b></h5>
-                <p>Java <br> C++ <br> Python </p>
-            </div>
-            
-            <!-- ---------------- Project 02 --------------- -->
-            
-            <div onclick="window.location.href='projectD.html';"  class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/website.png" alt="project pic" width="100px" height="100px">
-                <div class="star">
-                </div>
-                <h5 class="p-name"><b>Web Development Projects</b></h5>
-                <p>HTML, CSS, JavaScript, Bootstrap, Spring Boot, Angular, Node js, React js</p>
-            </div>
-
-            <!-- ---------------- Project 03 --------------- -->
-
-            <div onclick="window.location.href='projectD.html';"  class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/website.png" alt="project pic" width="100px" height="100px">
-                <div class="star">
-                </div>
-                <h5 class="p-name"><b>UI/UX Designs</b></h5>
-                <p>Figma</p>
-            </div>
-
-            <!-- ---------------- Project 04 --------------- -->
-
-             <div onclick="window.location.href='projectD.html';"  class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/website.png" alt="project pic" width="100px" height="100px">
-                <div class="star">
-                </div>
-                <h5 class="p-name"><b>Graphic Design</b></h5>
-                <p>Photoshop, Coreldraw, Illustrator, Canva, Figma</p>
-            </div>
-
-        </section>
-
-        <footer class="footer">
-  <p>Software Engineering Intern | Web Developer Intern</p>
-  <div class="social-icons">
-    <a href="https://github.com/hashini2016" target="_blank">
-      <img src="img/github-sign.png" alt="GitHub" class="social-icon">
-    </a>
-    <a href="https://www.linkedin.com/in/hashini-sathsarani-496a6a2ab" target="_blank">
-      <img src="img/linkedin.png" alt="LinkedIn" class="social-icon">
-    </a>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom">
+  <div class="container">
+    <img src="img/logohs.png" height="38">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link active" href="project.html">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
   </div>
-  <p>© 2025 Hashini Sathsarani. All Rights Reserved.</p>
+</nav>
+
+<!-- HEADER -->
+<section class="projects-hero">
+  <div class="container text-center">
+    <h2>My Work</h2>
+    <p>Things I’ve built & designed</p>
+  </div>
+</section>
+
+<!-- PROJECT LIST -->
+<section class="container my-5">
+  <div class="row">
+
+    <!-- ITEM -->
+    <div class="col-md-6 mb-4">
+      <div class="project-item">
+        <img src="img/website.png" class="project-icon-sm">
+        <div class="project-content">
+          <h6>TaskNest – Full Stack Web App</h6>
+          <p>Task management system with CRUD functionality.</p>
+          <span>React • Node • Express • MongoDB</span>
+          <a href="https://github.com/hashini2016/TaskNest---A-Full-Stack-Task-Management-Web-App.git"
+             target="_blank" class="btn btn-blue-outline btn-sm">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="project-item">
+        <img src="img/website.png" class="project-icon-sm">
+        <div class="project-content">
+          <h6>Travel Agency Website</h6>
+          <p>Tourism website with rental & package details.</p>
+          <span>HTML • CSS • JavaScript • Bootstrap</span>
+          <a href="https://hashini2016.github.io/Travel-Agency-Website/"
+             target="_blank" class="btn btn-blue-outline btn-sm">Live</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="project-item">
+        <img src="img/website.png" class="project-icon-sm">
+        <div class="project-content">
+          <h6>Guess The Word – Java</h6>
+          <p>Console-based word guessing game.</p>
+          <span>Java</span>
+          <a href="https://github.com/hashini2016/Java-Mini-project"
+             target="_blank" class="btn btn-blue-outline btn-sm">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="project-item">
+        <img src="img/website.png" class="project-icon-sm">
+        <div class="project-content">
+          <h6>Tic Tac Toe – Python</h6>
+          <p>GUI-based mini game.</p>
+          <span>Python</span>
+          <a href="https://github.com/hashini2016/python-project"
+             target="_blank" class="btn btn-blue-outline btn-sm">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="project-item">
+        <img src="img/website.png" class="project-icon-sm">
+        <div class="project-content">
+          <h6>UI / UX Designs</h6>
+          <p>Wireframes & high-fidelity designs.</p>
+          <span>Figma</span>
+          <a href="#" class="btn btn-blue-outline btn-sm">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="project-item">
+        <img src="img/website.png" class="project-icon-sm">
+        <div class="project-content">
+          <h6>Graphic Design</h6>
+          <p>Posters, banners & branding work.</p>
+          <span>Photoshop • CorelDRAW</span>
+          <a href="#" class="btn btn-blue-outline btn-sm">Gallery</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer text-center">
+  <p>© 2025 Hashini Sathsarani</p>
 </footer>
 
-    </body>
-    </html>
+</body>
+</html>
