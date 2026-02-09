@@ -734,6 +734,225 @@ body {
   }
 }
 
+/* ================= GENERAL ================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  padding: 0.8rem 1rem;
+  z-index: 1000;
+}
+
+/* ================= HERO ================= */
+.hero-about {
+  height: 50vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/aboutbg.jpeg') center/cover no-repeat;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-about h1 {
+  font-size: 2.5rem;
+}
+
+.hero-about h1 span {
+  color: #007bff;
+}
+
+.hero-about p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* ================= PROFILE IMAGE ================= */
+.profile-img {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* ================= SKILLS (CIRCLES) ================= */
+.skills-wrapper {
+  margin-top: 30px;
+}
+
+.skill-circle {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.skill-circle svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.skill-circle circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke: #eee;
+  r: 45;
+  cx: 50;
+  cy: 50;
+}
+
+.skill-circle circle:nth-child(2) {
+  stroke: #007bff;
+  stroke-dasharray: 283;
+  stroke-dashoffset: calc(283 - (283 * var(--percent)) / 100);
+  transition: stroke-dashoffset 1s ease;
+}
+
+.skill-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ================= EDUCATION TIMELINE ================= */
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #007bff;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: #007bff;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* ================= CERTIFICATES ================= */
+.certificate-card {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ================= BUTTON ================= */
+.btn-gradient {
+  background: linear-gradient(to right, #00bfff, #007bff);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+footer.footer {
+  background-color: #222;
+  color: #fff;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 768px) {
+  .hero-about {
+    height: 40vh;
+  }
+  .profile-img {
+    width: 180px;
+  }
+  .skill-circle {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.edu-card {
+  background-color: #fff;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card h5 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.edu-card p {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.edu-year {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.edu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
 
 
 
